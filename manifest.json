@@ -1,8 +1,9 @@
 {
-   "name": "Last.fm Scrobbler",
-   "version": "1.48",
+   "name": "Last.fm Scrobbler YouTube Canary",
+   "version": "1.48.2",
+   "version_name": "1.48.2 dev 02.07.15",
 
-   "description": "Scrobble music all around the web!",
+   "description": "Scrobble music all around the web! (beta)",
    "icons": {
       "128": "icon128.png"
    },
