@@ -165,6 +165,13 @@ require([
 				}
 				break;
 
+			case 'v2.toggleLove':
+				ctrl = getControllerByTabId(request.tabId);
+				if (ctrl) {
+					ctrl.toggleLove(request.data, sendResponse);
+				}
+				break;
+
 			// Redirect all other messages to legacy listener
 			default:
 				legacyScrobbler.runtimeOnMessage(request, sender, sendResponse);
@@ -206,7 +213,7 @@ require([
 		ChromeStorage.debugLog();
 
 		// check session ID status and show notification if authentication is needed
-		LastFM.getSessionID(function(sessionID) {
+		LastFM.getSession(function(sessionID) {
 			if (!sessionID) {
 				Notifications.showAuthenticate(LastFM.getAuthUrl);
 			} else {
