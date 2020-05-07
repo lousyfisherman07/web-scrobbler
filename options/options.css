@@ -1,6 +1,6 @@
 body {
 	background-color: #e3e3e3;
-	margin: 30px 0 0 0;
+	margin: 0;
 }
 
 h1, h2, h3, h4, h5 {
@@ -26,6 +26,10 @@ h1 i {
 	margin-right: 20px;
 }
 
+h4 {
+	margin-top: 30px;
+}
+
 ul {
 	list-style: none;
 }
@@ -38,7 +42,7 @@ input[type=checkbox] {
 	margin-top: 0;
 }
 
-.indent {
+p.indent {
 	padding-left: 30px;
 }
 
@@ -70,7 +74,7 @@ a.conn-config:hover {
 	border-bottom: none;
 }
 
-.conn-conf-patterns .list-unstyled {
+.conn-conf-patterns ul.list-unstyled {
 	margin-left: 0;
 }
 

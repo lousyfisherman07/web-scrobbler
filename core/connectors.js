@@ -221,6 +221,12 @@ define(function() {
 		},
 
 		{
+			label: 'Turntable',
+			matches: ['*://turntable.fm/*'],
+			js: ['connectors/turntable.js']
+		},
+
+		{
 			label: 'Slacker (iframe)',
 			matches: ['*://www.slacker.com/webplayer/index_embed.vm'],
 			js: ['connectors/slacker.js']
@@ -260,8 +266,7 @@ define(function() {
 		{
 			label: '8tracks',
 			matches: ['*://8tracks.com/*'],
-			js: ['connectors/v2/8tracks.js'],
-			version: 2
+			js: ['connectors/8tracks.js']
 		},
 
 		{
@@ -414,8 +419,7 @@ define(function() {
 		{
 			label: 'Archive.org',
 			matches: ['*://archive.org/details/*'],
-			js: ['connectors/v2/archive.js'],
-			version: 2
+			js: ['connectors/archive.js']
 		},
 
 		{
@@ -542,27 +546,6 @@ define(function() {
 			label: 'kollekt.fm',
 			matches: ['*://kollekt.fm/*'],
 			js: ['connectors/v2/kollekt.js'],
-			version: 2
-		},
-
-		{
-			label: 'audiosplitter.fm',
-			matches: ['*://audiosplitter.fm/*'],
-			js: ['connectors/v2/audiosplitter.js'],
-			version: 2
-		},
-
-		{
-			label: 'novoeradio.by',
-			matches: ['*://www.novoeradio.by/*'],
-			js: ['connectors/v2/novoeradio.js'],
-			version: 2
-		},
-
-		{
-			label: 'Tradiio',
-			matches: ['*://*tradiio.com/*'],
-			js: ['connectors/v2/tradiio.js'],
 			version: 2
 		}
 
